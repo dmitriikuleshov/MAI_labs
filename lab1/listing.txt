@@ -1,0 +1,50 @@
+root@Home:~# rm -r MAI_labs
+root@Home:~# mkdir MAI_labs
+root@Home:~# cd MAI_labs
+root@Home:~/MAI_labs# git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in /root/MAI_labs/.git/
+root@Home:~/MAI_labs# git remote add origin  https://github.com/dmitriikuleshov/MAI_labs.git
+root@Home:~/MAI_labs# git pull
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 640 bytes | 640.00 KiB/s, done.
+From https://github.com/dmitriikuleshov/MAI_labs
+ * [new branch]      main       -> origin/main
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+root@Home:~/MAI_labs# git pull https://github.com/dmitriikuleshov/MAI_labs.git origin
+fatal: couldn't find remote ref origin
+root@Home:~/MAI_labs# git pull https://github.com/dmitriikuleshov/MAI_labs.git main
+From https://github.com/dmitriikuleshov/MAI_labs
+ * branch            main       -> FETCH_HEAD
+root@Home:~/MAI_labs# git branch
+* master
+root@Home:~/MAI_labs# git checkout -b dev
+Switched to a new branch 'dev'
+root@Home:~/MAI_labs# git branch
+* dev
+  master
+root@Home:~/MAI_labs# mkdir lab1
+root@Home:~/MAI_labs# cd lab1
+root@Home:~/MAI_labs/lab1# touch listing.txt
+root@Home:~/MAI_labs/lab1# touch report.md
+root@Home:~/MAI_labs/lab1# vim listing.txt

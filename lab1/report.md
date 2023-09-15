@@ -20,6 +20,7 @@
 5. **Сценарий выполнения работы**: ...
 6. **Протокол**:
 ```
+
 @Home:~# mkdir MAI_labs
 root@Home:~# cd MAI_labs
 root@Home:~/MAI_labs# git init
@@ -50,6 +51,7 @@ root@Home:~/MAI_labs# mkdir lab1
 root@Home:~/MAI_labs# cd lab1
 root@Home:~/MAI_labs/lab1# touch listing.txt
 root@Home:~/MAI_labs/lab1# touch report.txt
+
 ```
 7. **Замечания автора** по существу работы: ...
 8. **Выводы**: изучены базовые команды git и получен потрясающий опыт установки ubuntu)

@@ -18,8 +18,9 @@
 
 4. **Идея, метод, алгоритм решения задачи**: ...
 5. **Сценарий выполнения работы**: ...
-6. **Протокол**:```
-root@Home:~# mkdir MAI_labs
+6. **Протокол**:
+```
+@Home:~# mkdir MAI_labs
 root@Home:~# cd MAI_labs
 root@Home:~/MAI_labs# git init
 hint: Using 'master' as the name for the initial branch. This default branch name

@@ -212,8 +212,8 @@ total 20
 -rw-r--r-- 1 d_kuleshov d_kuleshov 10240 Sep 23 23:33 archive.tar
 -rw-rw-r-- 1 d_kuleshov d_kuleshov     0 Sep 18 11:28 create_user.sh
 -rw-r--r-- 1 d_kuleshov d_kuleshov  4380 Sep 23 22:28 listing.md
-d_kuleshov@vds2476450:~$ scp listing.md root@172.26.126.66:~/MAI_labs/lab2/listing.md
 d_kuleshov@vds2476450:~$ logout
+root@Home:~# scp d_kuleshov@185.5.249.140:~/listing.md listing.md
 
 ```
 7. **Замечания автора** по существу работы: я использовал все команды в указанном порядке, залил файлик на удаленный сервер и мне открылась секретная концовка.

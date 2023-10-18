@@ -31,13 +31,13 @@
 | 0000 0001                    | 1                |
 
 6. **Протокол**: 
-	<image src="/images/main.png">
-	<image src="/images/pass.png">
-	<image src="/images/copy.png">
-	<image src="/images/copy_zeros1.png">
-	<image src="/images/copy_zeros22.png">
-	<image src="/images/enter_num.png">
-	<image src="/images/check.png">
+	![](https://github.com/dmitriikuleshov/MAI_labs/blob/main/lab6/images/main.png)
+	![](https://github.com/dmitriikuleshov/MAI_labs/blob/main/lab6/images/pass.png)
+	![](https://github.com/dmitriikuleshov/MAI_labs/blob/main/lab6/images/copy.png)
+	![](https://github.com/dmitriikuleshov/MAI_labs/blob/main/lab6/images/copy_zeros1.png)
+	![](https://github.com/dmitriikuleshov/MAI_labs/blob/main/lab6/images/copy_zeros22.png)
+	![](https://github.com/dmitriikuleshov/MAI_labs/blob/main/lab6/images/enter_num.png)
+	![](https://github.com/dmitriikuleshov/MAI_labs/blob/main/lab6/images/check.png)
 
 7. **Замечания автора** по существу работы: возникли проблемы с эмулятором VirtuslTuringMachine. При создании небольших машин типа start-----0-----R^2-----1------end для упрощения более сложных диаграмм, после сохранения и закрытия эмулятора все элементы диаграммы багаются, при этом знаки 0 и 1 пропадают. Эмулятор при выполнении программы, натыкаясь на них, вылетает и закрывается.  Если вместо написания таких небольших диаграмм включить их в состав вышестоящих десять раз, так как программа подразумевает работу с десятичными числами, проблем не наблюдается. Из за этого пришлось на середине выполнения работы переписать все почти с самого начала.
 8. **Выводы**: [Программа работает, проходит все придуманные тесты.](https://www.youtube.com/watch?v=Ry8CDgQoj_o) Ура, победа.

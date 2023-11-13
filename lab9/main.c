@@ -49,7 +49,7 @@ void print_data(int64_t i, int64_t j, int64_t l, int64_t k, bool in_area) {
 	printf("l = %ld, k = %ld\n", l, k);
 }
 
-int64_t main(void) {
+int main(void) {
 	int64_t k;
 
 	int64_t i = I0, j = J0, l = L0;
@@ -67,4 +67,4 @@ int64_t main(void) {
 	}
 	print_data(i, j, l, k - 1, false);
 	return 0;
-}
+

@@ -1,5 +1,4 @@
-
-\documentclass[a4paper, 12pt]{article}
+\documentclass[a4paper, 16pt]{article}
 \usepackage[english, russian]{babel} % для работы с текстом (форматирование, перенос и др.)
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -8,49 +7,51 @@
 
 
 \begin{document}
-
+\begin{large}
 \thispagestyle{empty}
 \textbf{Л Е М М А 3.} \textit {Если существует предел}
 \[
 \lim_{\substack{x \rightarrow x_0 \\ x \in \stackrel{\circ}{U}\left(x_0\right) \cap X}} f(x)=a
-\]
-
+\eqno\textbf(5.56)\] 
 \textit{и функция $f$ определена в точке $x_0$, то $f$ непрерывна в точке $x_0$ тогда и только тогда, когда $f\left(x_0\right)=a$.}
-
-\textsc{Доказательство}. Если функция $f$ непрерывна в точке $x_0$, т. е. выполняется условие (5.13), то в силу очевидного включения $\stackrel{\circ}{U}\left(x_0\right) \cap X \subset X$ и того, что из существования предела по множеству следует существование предела и по любому подмножеству, имеем
+\\\textsc{Доказательство}. Если функция $f$ непрерывна в точке $x_0$, т. е. выполняется условие (5.13), то в силу очевидного включения $\stackrel{\circ}{U}\left(x_0\right) \cap X \subset X$ и того, что из существования предела по множеству следует существование предела и по любому подмножеству, имеем
 \[
 \lim_{\substack{x \rightarrow x_0 \\ x \in \stackrel{\circ}{U} \left(x_0\right) \cap X}} f(x)=f\left(x_0\right) .
-\]
-
+\eqno\textbf(5.57)\] 
 Из (5.56) и (5.57) следует, что $f\left(x_0\right)=a$.
+
 Пусть теперь, наоборот, выполняется условие $f\left(x_0\right)=a$ и, следовательно,
 \[
 \lim_{\substack{x \rightarrow{x_0} \\ x \in \stackrel{\circ}{U}\left(x_0\right) \cap{X}}}{f(x)} \underset{(5.56)}{=} f\left(x_0\right) .
 \]
-
 Отсюда имеем, что для любой окрестности $U\left(f\left(x_0\right)\right)$ точки $f\left(x_0\right)$ существует такая окрестность $U\left(x_0\right)$ точки $x_0$, что
 \[
 f\left(\stackrel{\circ}{U}\left(x_0\right) \cap X\right) \subset U\left(f\left(x_0\right)\right) .
-\]
-
+\eqno\textbf(5.58)\] 
 Но, очевидно, $f\left(x_0\right) \in U\left(f\left(x_0\right)\right)$, поэтому в левой части включения (5.58) можно проколотую окрестность $\stackrel{\circ}{U}\left(x_0\right)$ заменить обычной окрестностью $U\left(x_0\right)$ :
 \[
 f\left(U\left(x_0\right) \cap X\right) \subset U\left(f\left(x_0\right)\right) .
 \]
-Это и означает, что функция $f$ непрерывна в точке $x_0$ . $\square$ 
+Это и означает, что функция $f$ непрерывна в точке $x_0$ . $\square$
 
 \textbf{П р и м е р ы. 1.} Функция $f(x)=c$, где $c-$ постоянная, непрерывна на всей числовой прямой.
+
 В самом деле, для любого $x_0 \in \boldsymbol{R}$ имеет место равенство
 \[
 \lim_{x \rightarrow x_0} f(x)=\lim _{x \rightarrow x_0} c=c=f\left(x_0\right) . \square
 \]
-2. Функция $f(x)=\frac{1}{x}$ непрерывна в каждой точке $x_0 \neq 0$. В самом деле,
+
+\textbf{2.} Функция $f(x)=\frac{1}{x}$ непрерывна в каждой точке $x_0 \neq 0$. 
+
+В самом деле,
 \[
 \begin{gathered}
 \Delta y=f\left(x_0+\Delta x\right)-f\left(x_0\right)=\frac{1}{x+\Delta x}-\frac{1}{x_0}=-\frac{\Delta x_0}{\left(x_0+\Delta x\right) x_0}, \\
 \\
-\frac{200}{}
+\overline{\textit{200}}
 \end{gathered}
 \]
-\end{document}
 
+\end{large}
+
+\end{document}

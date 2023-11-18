@@ -48,7 +48,7 @@ char* encode_text(char* text) {
             result[i] = text[i];
         }
     }
-    result[i] = '\0';
+    result[strlen(text)] = '\0';
     return result;
 }
 
@@ -73,7 +73,7 @@ char* decode_text(char* text) {
             result[i] = text[i];
         }
     }
-    result[i] = '\0';
+    result[strlen(text)] = '\0';
     return result;
 }
 

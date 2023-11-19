@@ -12,14 +12,25 @@ typedef enum _kState
 
 
 int main() {
+    char filename[100];
+    printf("Введите имя файла: ");
+    scanf("%s", filename);
+    FILE *file = fopen(filename, "r");
+
+    if (file == NULL) {
+        printf("Ошибка открытия файла\n");
+        return 1;
+    }
     kState state = READ_NONSPACE;
     int key = 3;
     int ch;
-    while ((ch = getchar()) != '\n') {
+    int prev_space_ch = ' ';
+    while ((ch = fgetc(file)) != EOF) {
         switch (state) {
             case READ_NONSPACE:
             {
-                if (isspace(ch)) {
+                if (!isalnum(ch)) {
+                    prev_space_ch = ch;
                     state = READ_SPACE;
                 } else {
                     if (isalpha(ch)) {
@@ -33,7 +44,7 @@ int main() {
 
             case READ_SPACE:
             {
-                printf("%c", ' ');
+                printf("%c", prev_space_ch);
                 if (!isspace(ch)) {
                     ++key;
                     if (isalpha(ch)) {
@@ -47,4 +58,5 @@ int main() {
             } break;
         }
     }
+    return 0;
 }
